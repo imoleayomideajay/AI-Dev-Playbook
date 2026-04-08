@@ -1,4 +1,3 @@
-
 # 🚀 AI Dev Playbook — Build Real Systems with AI
 
 The most practical, research-driven framework for building real-world applications using AI.
