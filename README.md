@@ -1,165 +1,142 @@
-# 🚀 AI Dev Playbook — Build Real Systems with AI
+# 💳 AI Dev Playbook
 
-The most practical, research-driven framework for building real-world applications using AI.
+> **Build real fintech and analytics systems with AI.**
 
-⭐ **Star this repo to stay ahead in AI development**
+A practical, high-trust framework for shipping AI-assisted applications in credit risk, fraud analytics, portfolio monitoring, and decision intelligence.
 
----
-
-## 🎯 What Makes This Different?
-
-Most “awesome lists” show tools.
-This repo shows you **how to actually build with them**.
-
-✔ Tool comparisons
-✔ Step-by-step playbooks
-✔ Real-world projects (fintech, analytics, dashboards)
-✔ Benchmarks & performance insights
+This repository is designed for builders who want production-style thinking, not hype: clear workflows, explainability-first design, governance-aware templates, and portfolio-quality project blueprints.
 
 ---
 
-## 🚀 Start Here (New to AI Development?)
+## Why this repo is different
 
-👉 Follow this path:
+Most AI repositories are either tool catalogs or theory dumps. This one is build-oriented.
 
-1. ⚡ Build your first app → [Quickstart](#-quickstart-build-your-first-ai-app)
-2. 🧰 Compare tools → [Tool Matrix](#-tool-matrix)
-3. 🧠 Learn workflows → [Playbooks](#-playbooks)
-4. 🔥 Explore projects → [Real Projects](#-real-projects)
-
----
-
-## ⚡ Quickstart: Build Your First AI App
-
-Build a **Streamlit AI app in 10 minutes**:
-
-* Input: User query
-* Processing: AI model
-* Output: Dashboard
-
-👉 Coming soon: Full template
+- ✅ Practical builds over tool hype
+- ✅ Fintech and analytics use cases, not generic demos
+- ✅ Explainability, governance, and audit readiness from day one
+- ✅ AI-assisted development as a workflow, not magic
+- ✅ Reproducible structures that are easy to extend
 
 ---
 
-## 🧰 Tool Matrix (Decision Framework)
+## Who this repo is for
 
-| Tool           | Category    | Best For        | Skill Level           | Strength              | Limitation       |
-| -------------- | ----------- | --------------- | --------------------- | --------------------- | ---------------- |
-| Lovable        | Web Builder | MVP apps        | Beginner              | Fast UI               | Limited control  |
-| Replit         | IDE         | Full-stack apps | Beginner–Intermediate | Easy deploy           | Performance      |
-| Cursor         | AI IDE      | Coding          | Intermediate          | Powerful autocomplete | Setup            |
-| Streamlit      | Dashboard   | Data apps       | Beginner              | Simple UI             | Limited frontend |
-| GitHub Copilot | Assistant   | Coding help     | All                   | Productivity boost    | Not autonomous   |
+- Data analysts building decision-ready apps
+- Fintech builders shipping risk and monitoring tools
+- Dashboard developers moving from BI to AI-assisted workflows
+- Developers creating portfolio-grade GitHub projects
+- Beginner-to-intermediate builders who need structure
 
 ---
 
-## 🧠 Playbooks (Step-by-Step Systems)
+## Start here
 
-### 1. Build a Data Dashboard with AI
-
-* SQL → Python → Streamlit
-* Add AI insights layer
-
-### 2. Build a Fraud Detection System
-
-* Simulated data
-* ML model
-* Live dashboard
-
-### 3. Build a Credit Scoring Engine
-
-* Feature engineering
-* Scorecard logic
-* Risk bands
-
-### 4. Build a SaaS App with AI
-
-* Idea → UI → Backend → Deploy
+1. Read [`tools/selection-guide.md`](tools/selection-guide.md)
+2. Compare tools in [`tools/tool-matrix.md`](tools/tool-matrix.md)
+3. Run [`templates/streamlit-starter`](templates/streamlit-starter/README.md)
+4. Build one playbook from [`playbooks/`](playbooks/)
+5. Choose a project blueprint from [`projects/`](projects/)
+6. Evaluate your output with [`benchmarks/fintech-app-evaluation-checklist.md`](benchmarks/fintech-app-evaluation-checklist.md)
 
 ---
 
-## 📊 Benchmarks (Coming Soon)
+## What you can build
 
-We test tools based on:
-
-* ⏱ Time to MVP
-* 📈 Output quality
-* 🧠 AI accuracy
-* ⚙️ Developer effort
-
----
-
-## 🔥 Real Projects
-
-### 💳 Credit Scoring System
-
-* Risk classification
-* Decision engine
-* Dashboard
-
-### 🚨 Fraud Detection App
-
-* Transaction monitoring
-* ML classification
-* Alerts system
-
-### 📊 Portfolio Analytics Dashboard
-
-* KPIs (PAR, disbursement, risk)
-* Forecasting
-* Executive-level insights
+- AI-assisted credit scoring app
+- Fraud alert dashboard
+- Executive portfolio health dashboard
+- Loan underwriting assistant
+- Monitoring and risk analytics dashboards
+- Explainable decision systems
 
 ---
 
-## 🧱 Repo Structure
+## 🧰 Tool matrix
 
-```bash
+Use the matrix to choose based on delivery constraints, governance needs, and fintech suitability:
+
+- [`tools/tool-matrix.md`](tools/tool-matrix.md)
+
+---
+
+## 📘 Featured playbooks
+
+- [`playbooks/build-first-ai-app.md`](playbooks/build-first-ai-app.md)
+- [`playbooks/build-a-data-dashboard-with-ai.md`](playbooks/build-a-data-dashboard-with-ai.md)
+- [`playbooks/build-a-fraud-detection-system.md`](playbooks/build-a-fraud-detection-system.md)
+- [`playbooks/build-a-credit-scoring-engine.md`](playbooks/build-a-credit-scoring-engine.md)
+- [`playbooks/build-a-loan-portfolio-dashboard.md`](playbooks/build-a-loan-portfolio-dashboard.md)
+- [`playbooks/build-an-explainable-risk-engine.md`](playbooks/build-an-explainable-risk-engine.md)
+
+---
+
+## 🏗️ Featured project blueprints
+
+- [`projects/fraud-detection/README.md`](projects/fraud-detection/README.md)
+- [`projects/credit-scoring/README.md`](projects/credit-scoring/README.md)
+- [`projects/portfolio-dashboard/README.md`](projects/portfolio-dashboard/README.md)
+- [`projects/underwriting-assistant/README.md`](projects/underwriting-assistant/README.md)
+- [`projects/aml-monitoring/README.md`](projects/aml-monitoring/README.md)
+
+---
+
+## 📏 Benchmarking philosophy
+
+We benchmark tools and apps by practical outcomes:
+
+- Time to MVP
+- Code editability and maintainability
+- Debugging support
+- Deployment readiness
+- Reproducibility
+- Governance friendliness
+
+Start here:
+- [`benchmarks/benchmark-framework.md`](benchmarks/benchmark-framework.md)
+- [`benchmarks/fintech-app-evaluation-checklist.md`](benchmarks/fintech-app-evaluation-checklist.md)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome: new playbooks, benchmark runs, project blueprints, and starter templates.
+
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+- [`SECURITY.md`](SECURITY.md)
+
+---
+
+## ⭐ Support this repo
+
+If this repository saves you time or helps you build faster, **star it so you can find it again**.
+
+You can also:
+- Watch for updates
+- Fork and adapt for your own team
+- Share with other fintech and analytics builders
+
+---
+
+## Repository structure
+
+```text
 ai-dev-playbook/
-│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+├── ROADMAP.md
+├── CHANGELOG.md
+├── assets/
 ├── playbooks/
-├── projects/
 ├── tools/
 ├── benchmarks/
 ├── templates/
-└── README.md
+├── projects/
+├── docs/
+└── .github/
 ```
-
----
-
-## 🤝 Contribute
-
-We welcome contributions:
-
-* Add tools
-* Improve playbooks
-* Share real projects
-
-👉 Open a pull request
-
----
-
-## 🌍 Vision
-
-To become the **#1 practical resource for AI-powered software development**
-
----
-
-## ⭐ Support
-
-If this repo helps you:
-
-👉 Star it
-👉 Fork it
-👉 Share it
-
----
-
-## 📚 References
-
-Borges, H., Hora, A., & Valente, M. T. (2016).
-Understanding the factors that impact the popularity of GitHub repositories.
-IEEE International Conference on Software Maintenance.
-
-Kalliamvakou, E., et al. (2014).
-The promises and perils of mining GitHub.
-MSR Conference.
