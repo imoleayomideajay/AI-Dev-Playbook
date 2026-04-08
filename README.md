@@ -1,165 +1,161 @@
-# 🚀 AI Dev Playbook — Build Real Systems with AI
+# 🚀 AI Dev Playbook
 
-The most practical, research-driven framework for building real-world applications using AI.
+> **Build real systems with AI — not just demos.**
 
-⭐ **Star this repo to stay ahead in AI development**
+A practical, benchmark-aware framework for developers, analysts, and fintech builders who want to ship real AI-powered products faster.
 
----
-
-## 🎯 What Makes This Different?
-
-Most “awesome lists” show tools.
-This repo shows you **how to actually build with them**.
-
-✔ Tool comparisons
-✔ Step-by-step playbooks
-✔ Real-world projects (fintech, analytics, dashboards)
-✔ Benchmarks & performance insights
+AI Dev Playbook is designed for people who are tired of vague tutorials and endless tool lists. This repository gives you **actionable playbooks**, **tool selection clarity**, **starter templates**, and **project blueprints** that help you move from idea to deployed system.
 
 ---
 
-## 🚀 Start Here (New to AI Development?)
+## Why this repo is different
 
-👉 Follow this path:
+Most “awesome AI” repositories are broad catalogs.
 
-1. ⚡ Build your first app → [Quickstart](#-quickstart-build-your-first-ai-app)
-2. 🧰 Compare tools → [Tool Matrix](#-tool-matrix)
-3. 🧠 Learn workflows → [Playbooks](#-playbooks)
-4. 🔥 Explore projects → [Real Projects](#-real-projects)
+This repository is intentionally different:
 
----
-
-## ⚡ Quickstart: Build Your First AI App
-
-Build a **Streamlit AI app in 10 minutes**:
-
-* Input: User query
-* Processing: AI model
-* Output: Dashboard
-
-👉 Coming soon: Full template
+- ✅ **Curated, not bloated**: focused on tools and workflows that help you ship.
+- ✅ **Build-first**: each section is tied to practical outcomes.
+- ✅ **Benchmark-aware**: compare tools using a repeatable framework, not hype.
+- ✅ **Product-oriented**: guides for fraud detection, credit scoring, and dashboards.
+- ✅ **Beginner-to-intermediate friendly**: structured paths that reduce confusion.
 
 ---
 
-## 🧰 Tool Matrix (Decision Framework)
+## Start Here
 
-| Tool           | Category    | Best For        | Skill Level           | Strength              | Limitation       |
-| -------------- | ----------- | --------------- | --------------------- | --------------------- | ---------------- |
-| Lovable        | Web Builder | MVP apps        | Beginner              | Fast UI               | Limited control  |
-| Replit         | IDE         | Full-stack apps | Beginner–Intermediate | Easy deploy           | Performance      |
-| Cursor         | AI IDE      | Coding          | Intermediate          | Powerful autocomplete | Setup            |
-| Streamlit      | Dashboard   | Data apps       | Beginner              | Simple UI             | Limited frontend |
-| GitHub Copilot | Assistant   | Coding help     | All                   | Productivity boost    | Not autonomous   |
+If you are new, follow this order:
 
----
-
-## 🧠 Playbooks (Step-by-Step Systems)
-
-### 1. Build a Data Dashboard with AI
-
-* SQL → Python → Streamlit
-* Add AI insights layer
-
-### 2. Build a Fraud Detection System
-
-* Simulated data
-* ML model
-* Live dashboard
-
-### 3. Build a Credit Scoring Engine
-
-* Feature engineering
-* Scorecard logic
-* Risk bands
-
-### 4. Build a SaaS App with AI
-
-* Idea → UI → Backend → Deploy
+1. Read the **Tool Selection Guide** → [`tools/selection-guide.md`](tools/selection-guide.md)
+2. Scan the **Tool Matrix** → [`tools/tool-matrix.md`](tools/tool-matrix.md)
+3. Build your first project with the playbook → [`playbooks/build-first-ai-app.md`](playbooks/build-first-ai-app.md)
+4. Run the template app → [`templates/streamlit-starter/README.md`](templates/streamlit-starter/README.md)
+5. Pick a project blueprint in [`projects/`](projects/)
 
 ---
 
-## 📊 Benchmarks (Coming Soon)
+## 🧰 Tool Matrix
 
-We test tools based on:
+Compare developer tools by category, flexibility, MVP speed, and practical constraints:
 
-* ⏱ Time to MVP
-* 📈 Output quality
-* 🧠 AI accuracy
-* ⚙️ Developer effort
+- [`tools/tool-matrix.md`](tools/tool-matrix.md)
 
----
-
-## 🔥 Real Projects
-
-### 💳 Credit Scoring System
-
-* Risk classification
-* Decision engine
-* Dashboard
-
-### 🚨 Fraud Detection App
-
-* Transaction monitoring
-* ML classification
-* Alerts system
-
-### 📊 Portfolio Analytics Dashboard
-
-* KPIs (PAR, disbursement, risk)
-* Forecasting
-* Executive-level insights
+Tools included:
+**Codex, Cursor, Replit, Lovable, Streamlit, GitHub Copilot, Windsurf, Bolt, v0**
 
 ---
 
-## 🧱 Repo Structure
+## 📘 Playbooks
 
-```bash
+Step-by-step build guides:
+
+- [`playbooks/build-first-ai-app.md`](playbooks/build-first-ai-app.md)
+- [`playbooks/build-a-data-dashboard-with-ai.md`](playbooks/build-a-data-dashboard-with-ai.md)
+- [`playbooks/build-a-fraud-detection-system.md`](playbooks/build-a-fraud-detection-system.md)
+- [`playbooks/build-a-credit-scoring-engine.md`](playbooks/build-a-credit-scoring-engine.md)
+
+Each playbook includes:
+- Who it is for
+- What you will build
+- Recommended stack
+- Workflow
+- Common mistakes
+- Upgrade ideas
+- Final takeaway
+
+---
+
+## 🏗️ Real Projects
+
+Project-overview blueprints for real-world use cases:
+
+- [`projects/fraud-detection/README.md`](projects/fraud-detection/README.md)
+- [`projects/credit-scoring/README.md`](projects/credit-scoring/README.md)
+- [`projects/portfolio-dashboard/README.md`](projects/portfolio-dashboard/README.md)
+
+---
+
+## 📏 Benchmarks
+
+Evaluate AI development tools using a repeatable process:
+
+- [`benchmarks/benchmark-framework.md`](benchmarks/benchmark-framework.md)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome — especially practical playbooks, benchmark runs, starter templates, and project case studies.
+
+- Start here: [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- Read our code of conduct: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+- Report security issues responsibly: [`SECURITY.md`](SECURITY.md)
+
+---
+
+## ❤️ Support
+
+If this repository saves you time or helps you build faster, **star it so you can find it again**.
+
+Also consider:
+- Watching the repo for updates
+- Forking it to build your own version
+- Sharing it with your team or developer community
+
+---
+
+## Repository structure
+
+```text
 ai-dev-playbook/
-│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+├── ROADMAP.md
+├── CHANGELOG.md
+├── assets/
+│   └── repo-banner.md
 ├── playbooks/
-├── projects/
+│   ├── build-first-ai-app.md
+│   ├── build-a-data-dashboard-with-ai.md
+│   ├── build-a-fraud-detection-system.md
+│   └── build-a-credit-scoring-engine.md
 ├── tools/
+│   ├── tool-matrix.md
+│   └── selection-guide.md
 ├── benchmarks/
+│   └── benchmark-framework.md
 ├── templates/
-└── README.md
+│   └── streamlit-starter/
+│       ├── README.md
+│       ├── app.py
+│       └── requirements.txt
+├── projects/
+│   ├── fraud-detection/
+│   │   └── README.md
+│   ├── credit-scoring/
+│   │   └── README.md
+│   └── portfolio-dashboard/
+│       └── README.md
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    │   ├── bug_report.md
+    │   ├── feature_request.md
+    │   └── tool_submission.md
+    ├── pull_request_template.md
+    └── workflows/
+        └── markdown-lint.yml
 ```
 
 ---
 
-## 🤝 Contribute
+## 📌 Quick CTA
 
-We welcome contributions:
+- Build one playbook this week.
+- Submit one improvement next week.
+- Help one builder ship faster.
 
-* Add tools
-* Improve playbooks
-* Share real projects
-
-👉 Open a pull request
-
----
-
-## 🌍 Vision
-
-To become the **#1 practical resource for AI-powered software development**
-
----
-
-## ⭐ Support
-
-If this repo helps you:
-
-👉 Star it
-👉 Fork it
-👉 Share it
-
----
-
-## 📚 References
-
-Borges, H., Hora, A., & Valente, M. T. (2016).
-Understanding the factors that impact the popularity of GitHub repositories.
-IEEE International Conference on Software Maintenance.
-
-Kalliamvakou, E., et al. (2014).
-The promises and perils of mining GitHub.
-MSR Conference.
+That’s how this becomes a flagship open-source resource.
