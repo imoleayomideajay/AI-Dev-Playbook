@@ -1,29 +1,21 @@
 # Security Policy
 
-Thank you for helping keep AI Dev Playbook and its users safe.
+We welcome responsible disclosure of security issues in templates, workflows, and repository content.
 
-## Supported scope
+## Report privately
+Do not open public issues for sensitive vulnerabilities.
 
-This repository is primarily documentation and starter templates. Security reports are still welcome for:
+Please include:
+- Description of the issue
+- Reproduction steps
+- Potential impact
+- Suggested fix (if available)
 
-- Template vulnerabilities
-- Unsafe default practices in sample code
-- Dependency risks in starter templates
-- Sensitive data exposure in repository files
-
-## Responsible disclosure
-
-Please **do not** open public issues for sensitive vulnerabilities.
-
-Instead, report privately with:
-
-- A clear description of the issue
-- Steps to reproduce
-- Impact assessment
-- Suggested remediation (if known)
-
-Maintainers will acknowledge reports promptly and provide updates on resolution status.
+## Scope examples
+- Unsafe defaults in starter templates
+- Dependency vulnerabilities
+- Secret exposure in repository files
+- Insecure workflow patterns
 
 ## Safe usage reminder
-
-Never commit real credentials, private datasets, or production secrets. Use environment variables and secret managers.
+Never commit production credentials, PII, or confidential datasets.

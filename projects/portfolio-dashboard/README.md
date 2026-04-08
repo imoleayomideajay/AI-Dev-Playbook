@@ -1,39 +1,49 @@
-# Project Overview: Portfolio Dashboard
+# Project Blueprint: Portfolio Monitoring Dashboard
 
 ## Project goal
+Build a decision-focused portfolio dashboard for exposure, delinquency, and concentration risk.
 
-Build an AI-assisted portfolio intelligence dashboard for tracking risk, performance, and allocation decisions.
+## Who it is for
+Portfolio managers, risk leads, and executive stakeholders.
 
-## Ideal users
+## Problem statement
+Portfolio risk can accumulate silently without timely and clear monitoring signals.
 
-- Investment analysts
-- Portfolio managers
-- Independent financial builders
+## Suggested data schema
+- reporting_date, product, region
+- active_accounts, exposure_usd
+- par30_pct, par90_pct, chargeoff_pct
+- vintage_bucket
 
-## Suggested data inputs
+## Example features
+- Trend features for PAR and charge-off
+- Concentration by product/region
+- Vintage roll-rate summaries
 
-- Portfolio holdings and weights
-- Historical prices and returns
-- Benchmark index data
-- Sector, geography, and factor exposures
+## Model / rules ideas
+- Threshold-based traffic light statuses
+- Early-warning risk scoring overlays
 
-## Model or logic ideas
+## Dashboard or UI ideas
+- KPI summary cards
+- Drill-down by segment/vintage
+- Trend and variance views
+- AI narrative summary panel
 
-- Return and volatility analytics
-- Drawdown and correlation monitoring
-- AI-generated portfolio commentary
-- Rule-based rebalance signal suggestions
+## Explainability considerations
+- Include metric definitions in UI
+- Attach data timestamp and source notes
+- Separate narrative from observed facts
 
-## Dashboard features
+## Evaluation metrics
+- Dashboard load and usability
+- Decision usefulness from stakeholder feedback
+- Alert precision for threshold flags
 
-- Allocation and concentration views
-- Performance vs benchmark panels
-- Risk metric cards (volatility, max drawdown)
-- AI insight panel summarizing changes
+## Future enhancements
+- Scenario analysis and stress tests
+- Email/slack risk digests
+- Portfolio comparison views
 
-## Possible future enhancements
-
-- Scenario testing and stress simulation
-- Alerting for drift from target allocation
-- Tax-aware rebalance recommendations
-- Multi-portfolio comparison workspace
+## Why this project is portfolio-worthy
+It demonstrates business communication, data storytelling, and risk analytics engineering.

@@ -1,38 +1,50 @@
-# Project Overview: Credit Scoring
+# Project Blueprint: Credit Scoring Engine
 
 ## Project goal
+Design an explainable scoring workflow for credit approval and risk tiering.
 
-Create an explainable credit scoring workflow for approval and limit-setting decisions.
+## Who it is for
+Credit analysts, lending product teams, and fintech data scientists.
 
-## Ideal users
+## Problem statement
+Lenders need consistent decisions with transparent rationale and measurable risk tradeoffs.
 
-- Lending product teams
-- Credit analysts
-- Risk and compliance stakeholders
+## Suggested data schema
+- applicant_id, application_date
+- income, employment_length, utilization
+- prior_delinquency_count, bureau_score
+- target_default_12m
 
-## Suggested data inputs
+## Example features
+- Debt-to-income proxies
+- Payment behavior aggregates
+- Stability indicators (tenure, account age)
 
-- Application profile data
-- Income and employment attributes
-- Repayment and delinquency history
-- Credit utilization and account stability
+## Model / rules ideas
+- Logistic baseline scorecard
+- Gradient boosting challenger
+- Policy rules for manual review bands
 
-## Model or logic ideas
+## Dashboard or UI ideas
+- Applicant score band and decision suggestion
+- Reason-code explanation panel
+- Approval-rate vs default-risk simulation
 
-- Baseline scorecard or logistic regression
-- Gradient boosting for improved predictive lift
-- Policy layer for score cutoffs and overrides
+## Explainability considerations
+- Store reason codes per decision
+- Document threshold logic
+- Track model/policy version for audit
 
-## Dashboard features
+## Evaluation metrics
+- AUC/KS
+- Default rate by score band
+- Calibration quality
+- Approval yield vs expected loss
 
-- Applicant risk summary and score band
-- Feature-level reason codes
-- Threshold simulation panel
-- Portfolio approval-rate vs default-risk view
+## Future enhancements
+- Stress testing scenarios
+- Fairness proxy dashboards
+- Segment-specific policy overlays
 
-## Possible future enhancements
-
-- Segment-specific scorecards
-- Stress-testing under macro scenarios
-- Drift and calibration monitoring
-- Fairness proxy reporting workflow
+## Why this project is portfolio-worthy
+It combines analytics, governance, and business decision design in one coherent system.

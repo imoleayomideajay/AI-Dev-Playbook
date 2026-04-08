@@ -1,46 +1,25 @@
 # Contributing to AI Dev Playbook
 
-Thanks for your interest in improving this repository. We welcome practical contributions from developers, analysts, and builders.
+Thanks for contributing. We prioritize practical, trustworthy improvements that help builders ship real fintech and analytics systems.
 
-## What to contribute
+## Good contributions
+- New playbooks with reproducible workflows
+- Better benchmark runs and evaluation notes
+- Improved templates and starter projects
+- New project blueprints with clear business context
+- Documentation improvements grounded in real usage
 
-High-impact contributions include:
+## Contribution flow
+1. Fork and create a branch (`feat/...` or `fix/...`).
+2. Make focused changes.
+3. Validate formatting/checks.
+4. Open a clear pull request using the template.
 
-- New or improved playbooks with clear build workflows
-- Tool comparison updates grounded in hands-on use
-- Reproducible starter templates
-- Project blueprints for real business use cases
-- Benchmark runs using our framework
-- Documentation clarity improvements
+## Quality expectations
+- Keep claims realistic and verifiable.
+- Explain trade-offs and limitations.
+- Include governance and explainability considerations for fintech/risk topics.
+- Write concise, scan-friendly markdown.
 
-## Contribution process
-
-1. Fork the repository
-2. Create a branch (`feat/your-change` or `fix/your-change`)
-3. Make focused changes with clear commits
-4. Run checks (at minimum: markdown lint if available)
-5. Open a pull request with context, reasoning, and examples
-
-## Quality standard
-
-Please keep contributions:
-
-- Practical and implementation-focused
-- Concise and easy to scan
-- Honest about limitations and tradeoffs
-- Reproducible where possible
-- Consistent with existing file structure and tone
-
-## Pull request checklist
-
-- [ ] I explained the problem and why this change helps builders
-- [ ] I linked any related issue(s)
-- [ ] I kept scope focused
-- [ ] I updated docs where needed
-- [ ] I avoided hype and unverifiable claims
-
-## Need ideas?
-
-Check [`ROADMAP.md`](ROADMAP.md) and open issues labeled `good first issue` or `help wanted`.
-
-We value useful contributions over perfect polish.
+## First-time contributors
+Check open issues labeled `good first issue` and `playbook-request`.

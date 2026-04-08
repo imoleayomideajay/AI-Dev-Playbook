@@ -1,85 +1,69 @@
-# Benchmark Framework for AI Development Tools
+# Benchmark Framework for AI Development Workflows
 
 ## Purpose
-
-Provide a repeatable, practical method for evaluating AI development tools based on real build outcomes, not marketing claims.
+Provide a repeatable method to compare AI development tools and workflows using practical delivery criteria.
 
 ## Benchmark dimensions
+- Time to MVP
+- Code editability
+- Debugging support
+- Deployment readiness
+- Reproducibility
+- Collaboration friendliness
+- Beginner friendliness
+- Governance friendliness
+- Documentation quality
 
-Evaluate each tool (or toolchain) across the following dimensions:
-
-1. **Time to MVP**
-   - How quickly can a builder produce a usable prototype?
-2. **Output quality**
-   - Is generated code/documentation correct, readable, and maintainable?
-3. **Debugging support**
-   - How effective is the tool in identifying and fixing issues?
-4. **Deployment readiness**
-   - How easily can outputs be moved to staging/production workflows?
-5. **Beginner friendliness**
-   - How manageable is the learning curve for non-experts?
-6. **Reproducibility**
-   - Can teammates reproduce results and workflows consistently?
+## Dimension definitions
+- **Time to MVP**: Speed to first usable demo.
+- **Code editability**: How easily teams can maintain generated output.
+- **Debugging support**: Helpfulness in tracing and fixing errors.
+- **Deployment readiness**: Ease of moving to staging/production.
+- **Reproducibility**: Consistency across machines/builders.
+- **Collaboration friendliness**: Team handoff and review quality.
+- **Beginner friendliness**: Onboarding clarity for less experienced builders.
+- **Governance friendliness**: Support for traceability, controls, and audits.
+- **Documentation quality**: Quality of setup, decisions, and assumptions.
 
 ## Suggested evaluation process
-
-1. Define one realistic build scenario (e.g., dashboard with AI summary).
-2. Fix constraints:
-   - same scope
-   - same dataset/sample inputs
-   - same target delivery window
-3. Run at least two tools/toolchains independently.
-4. Capture evidence:
-   - elapsed time
-   - major blockers
-   - quality notes
-   - final output state
-5. Score qualitatively (Low/Medium/High) with written rationale.
-6. Run a short team review and record consensus.
-7. Store results in a benchmark log for future comparisons.
-
-## Measurement tips
-
-- Timebox to 2-6 hours for first-pass MVP benchmarks.
-- Prioritize observable outcomes over subjective impressions.
-- Document failure modes, not just successes.
-- Re-run benchmarks quarterly as tools evolve.
+1. Choose one realistic build task.
+2. Fix scope, sample data, and timebox.
+3. Run two or more tool workflows.
+4. Record blockers, manual edits, and final output quality.
+5. Rate each dimension (Low/Medium/High) with notes.
+6. Review results with at least one peer.
+7. Store benchmark notes in version control.
 
 ## Blank benchmark template
 
 ```markdown
-# Benchmark Run: <scenario name>
+# Benchmark Run: <name>
 
 ## Context
 - Date:
 - Evaluator(s):
 - Scenario:
-- Target user:
-- Constraints:
+- Timebox:
 
-## Tool / Toolchain
+## Toolchain
 - Primary tool:
 - Supporting tools:
-- Environment:
 
-## Results
-| Dimension | Rating (Low/Medium/High) | Notes |
+## Ratings
+| Dimension | Rating (Low/Medium/High) | Evidence |
 |---|---|---|
 | Time to MVP |  |  |
-| Output quality |  |  |
+| Code editability |  |  |
 | Debugging support |  |  |
 | Deployment readiness |  |  |
-| Beginner friendliness |  |  |
 | Reproducibility |  |  |
+| Collaboration friendliness |  |  |
+| Beginner friendliness |  |  |
+| Governance friendliness |  |  |
+| Documentation quality |  |  |
 
-## Evidence
-- Time to first working demo:
-- Number of major errors encountered:
-- Number of manual fixes required:
-- Deployment status:
-
-## Recommendation
-- Best-fit use case:
-- Not recommended for:
+## Outcome
+- Recommended for:
+- Not ideal for:
 - Decision:
 ```

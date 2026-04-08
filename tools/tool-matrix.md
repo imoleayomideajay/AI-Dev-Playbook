@@ -1,23 +1,21 @@
-# Tool Matrix
+# Tool Matrix (Fintech Analytics Focus)
 
-Qualitative comparison of common AI-assisted development tools and platforms.
+Qualitative comparison for real-world AI-assisted development workflows.
 
-> Ratings use **Low / Medium / High** and are intentionally qualitative to stay practical and transparent.
+| Tool | Category | Best for | Skill level | Fintech analytics suitability | Speed to MVP | Flexibility | Governance friendliness | Key advantage | Key limitation |
+|---|---|---|---|---|---|---|---|---|---|
+| Codex | Agentic coding assistant | End-to-end repo implementation and refactoring | Intermediate | High | High | High | High | Strong repo-level execution with context-aware edits | Requires clear prompts and review discipline |
+| Cursor | AI-native IDE | Daily coding with tight human-in-the-loop iteration | Beginner-Intermediate | High | High | High | Medium | Fast iteration with direct code control | Easy to over-generate without architecture guardrails |
+| Replit | Cloud development platform | Quick prototypes and collaborative demos | Beginner | Medium | High | Medium | Medium | Very fast setup and sharing | Less ideal for strict enterprise controls |
+| Lovable | Prompt-first app builder | UI-first MVPs for non-experts | Beginner | Medium | High | Medium | Low | Fast way to make visible prototypes | Limited control for risk logic and governance needs |
+| Streamlit | Python app framework | Analytics dashboards, risk tools, monitoring apps | Beginner-Intermediate | High | High | Medium | High | Great fit for data teams shipping practical apps | Custom UI depth is lower than full frontend stacks |
+| GitHub Copilot | In-editor coding assistant | Incremental productivity in existing IDE workflows | Beginner-Advanced | High | Medium | High | Medium | Low-friction coding acceleration across languages | Does not provide full workflow orchestration |
+| Windsurf | AI dev environment | Agent-assisted coding in one workspace | Intermediate | Medium | High | High | Medium | Strong autonomous coding workflow options | Quality varies based on task framing and reviews |
+| Bolt | Prompt-to-web-app builder | Rapid app scaffolding and concept validation | Beginner | Medium | High | Medium | Low | Quick path to clickable prototypes | Generated structure usually needs hardening |
+| v0 | UI generation tool | Fast dashboard UI/component starting points | Beginner-Intermediate | Medium | High | Medium | Medium | Excellent speed for frontend iteration | Backend logic and governance controls still manual |
 
-| Tool | Category | Best for | Skill level | Speed to MVP | Flexibility | Key advantage | Key limitation |
-|---|---|---|---|---|---|---|---|
-| Codex | Agentic coding assistant | Repo-level implementation and refactoring workflows | Intermediate | High | High | Strong for end-to-end code changes with context | Needs good prompting and review discipline |
-| Cursor | AI-native IDE | Developers who want in-editor AI pair programming | Beginner–Intermediate | High | High | Tight IDE workflow and fast iteration | Can encourage over-reliance without architecture planning |
-| Replit | Cloud dev platform | Rapid prototyping and quick sharing | Beginner | High | Medium | Zero-setup environment and easy collaboration | Less control for advanced production architecture |
-| Lovable | AI app builder | Non-experts shipping UI-first products quickly | Beginner | High | Medium | Fastest path from idea to visible app | Limited depth for complex backend logic |
-| Streamlit | Python app framework | Data apps and analytics dashboards | Beginner–Intermediate | High | Medium | Excellent for data workflows and demo-to-MVP path | UI customization ceiling vs full frontend stacks |
-| GitHub Copilot | Code completion assistant | General coding productivity in existing IDEs | Beginner–Advanced | Medium | High | Broad language support with low friction adoption | Not a full workflow orchestrator by itself |
-| Windsurf | AI development environment | AI-assisted coding with integrated agent workflows | Intermediate | High | High | Strong autonomous coding flows in one workspace | Team standards required to keep output consistent |
-| Bolt | Prompt-to-app builder | Fast web app scaffolding from ideas | Beginner | High | Medium | Rapid generation of working app skeletons | Generated output often needs structural hardening |
-| v0 | UI generation tool | Fast component and interface prototyping | Beginner–Intermediate | High | Medium | Excellent speed for modern UI mockups/components | Primarily frontend-focused; backend still required |
+## Notes for fintech teams
 
-## How to use this matrix
-
-1. Start with your delivery constraint (speed, control, or team maintainability).
-2. Pick one primary build tool and one supporting tool.
-3. Validate your choice with the benchmark framework in [`../benchmarks/benchmark-framework.md`](../benchmarks/benchmark-framework.md).
+- Choose for **traceability and maintainability**, not only speed.
+- Pair UI-generation tools with strong Python/backend ownership.
+- Use benchmark and governance checklists before production promotion.

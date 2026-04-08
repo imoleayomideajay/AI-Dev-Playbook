@@ -1,44 +1,65 @@
 # Playbook: Build a Fraud Detection System
 
 ## Who this is for
-
-Fintech builders, risk analysts, and engineers designing early-stage fraud monitoring products.
+Fintech risk analysts and engineers building practical fraud alerting workflows.
 
 ## What you will build
+A fraud detection pipeline with rule-based screening, model risk scoring, and analyst review support.
 
-A rules-plus-model fraud scoring pipeline with case triage dashboard concepts.
+## Why it matters
+Fraud systems fail when they optimize only model metrics and ignore operational review burden.
 
 ## Recommended stack
+- Python + Pandas
+- scikit-learn or XGBoost
+- Streamlit for analyst case views
+- SQL store for events and decisions
 
-- Data processing: Python + Pandas
-- Modeling: scikit-learn / XGBoost
-- Dashboard: Streamlit
-- Storage: Postgres or warehouse tables
+## Suggested folder structure
+```text
+fraud-system/
+├── data/
+├── features/
+├── rules/
+├── models/
+├── dashboard/
+└── monitoring/
+```
 
-## Workflow
+## Step-by-step workflow
+1. Define fraud objective and alert SLAs.
+2. Build baseline rules (velocity, location mismatch, device anomalies).
+3. Prepare labeled data and handle class imbalance.
+4. Train model and compare against rule-only baseline.
+5. Design decision thresholds for false-positive tolerance.
+6. Build review queue UI and analyst feedback capture.
+7. Track drift and recalibration cadence.
 
-1. Define fraud objective and decision threshold strategy.
-2. Assemble labeled transaction history and baseline features.
-3. Build interpretable baseline rules (velocity, amount spikes, geolocation mismatch).
-4. Train a lightweight model for incremental lift.
-5. Combine rule and model outputs into risk tiers.
-6. Build analyst-facing review dashboard for flagged cases.
-7. Track precision, recall, false positives, and review workload.
+## Data requirements
+- Transaction events with timestamps
+- Outcome labels (chargeback/fraud confirmed)
+- Device, identity, merchant context
+
+## Core metrics or outputs
+- Precision, recall, PR-AUC
+- False-positive rate
+- Analyst workload per day
+- Time-to-investigation
 
 ## Common mistakes
+- Ignoring class imbalance handling
+- No threshold governance process
+- No feedback loop from analysts
 
-- Optimizing only for accuracy instead of operational cost
-- Ignoring analyst feedback loops
-- Not versioning features and thresholds
-- Failing to test drift in transaction behavior
+## Governance / responsible use considerations
+- Document label quality and delays
+- Log rule/model versions per decision
+- Add human review for high-impact blocks
 
 ## Upgrade ideas
-
-- Add graph-based entity linking for mule detection
-- Add real-time scoring and alert routing
-- Add adaptive thresholds by user segment
-- Add champion/challenger model evaluation
+- Graph/entity-link fraud detection
+- Segment-specific thresholds
+- Champion-challenger model testing
 
 ## Final takeaway
-
-Effective fraud systems balance detection strength with operational practicality. Start with transparent rules, then layer in model intelligence.
+Fraud detection is a socio-technical system: model quality, thresholds, and review operations must work together.

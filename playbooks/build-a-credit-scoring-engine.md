@@ -1,44 +1,64 @@
 # Playbook: Build a Credit Scoring Engine
 
 ## Who this is for
-
-Fintech product teams and analysts building explainable credit decision workflows.
+Fintech teams building explainable credit decision workflows.
 
 ## What you will build
+A scoring prototype with clear features, score bands, policy thresholds, and explanation outputs.
 
-A prototype credit scoring engine with feature pipeline, score bands, and explanation-ready outputs.
+## Why it matters
+Credit decisions require consistency, interpretability, and governance beyond model accuracy.
 
 ## Recommended stack
+- Python + Pandas
+- Logistic Regression (baseline) and Gradient Boosting (challenger)
+- Streamlit for underwriter review UI
+- SHAP or reason-code logic
 
-- Data pipeline: Python + Pandas
-- Modeling: Logistic Regression / Gradient Boosting
-- Explainability: SHAP or feature contribution summaries
-- App layer: Streamlit dashboard for underwriter review
+## Suggested folder structure
+```text
+credit-engine/
+├── data/
+├── features/
+├── models/
+├── policy/
+├── explainability/
+└── dashboard/
+```
 
-## Workflow
+## Step-by-step workflow
+1. Define decision policy (approve/decline/refer).
+2. Build feature dictionary and validation checks.
+3. Train baseline scorecard-style model.
+4. Add challenger ML model and compare lift.
+5. Calibrate probabilities and define score bands.
+6. Attach reason codes to decisions.
+7. Monitor performance and drift monthly.
 
-1. Define decision objective (approval, pricing, or limit assignment).
-2. Build clean feature groups (income, repayment behavior, utilization, stability).
-3. Train baseline model and calibrate probability outputs.
-4. Convert probabilities to score bands and policy cutoffs.
-5. Add reason codes for adverse-action style explanations.
-6. Validate performance across customer segments.
-7. Document governance assumptions and monitoring plan.
+## Data requirements
+- Applicant profile and credit behavior fields
+- Repayment outcomes for supervision
+- Segment identifiers for fairness checks
+
+## Core metrics or outputs
+- KS, AUC, default rate by score band
+- Approval rate vs risk tradeoff
+- Calibration error
 
 ## Common mistakes
+- Treating score as static
+- Ignoring calibration
+- Missing adverse-action explanation logic
 
-- Treating score as static instead of monitored system
-- Ignoring calibration and threshold governance
-- No explanation layer for borderline decisions
-- Weak data quality controls on source fields
+## Governance / responsible use considerations
+- Version policy thresholds and overrides
+- Audit model and feature changes
+- Include manual review path for borderline cases
 
 ## Upgrade ideas
-
-- Add segment-specific scorecards
-- Add scenario testing for macro stress conditions
-- Add monitoring dashboard for drift and fairness proxies
-- Add API service for real-time decisioning
+- Segment-specific scorecards
+- Stress testing under macro scenarios
+- Policy simulation dashboard
 
 ## Final takeaway
-
-A trustworthy credit scoring engine is not just a model. It is a governed decision system with clear policy, calibration, and explainability.
+A credit scoring engine is a governed decision system, not only a predictive model.

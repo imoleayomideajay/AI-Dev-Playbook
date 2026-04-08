@@ -1,16 +1,15 @@
-# Streamlit Starter Template
+# Streamlit Starter
 
-A minimal template for quickly starting an AI-assisted data app.
+Beginner-friendly starter for an AI-assisted analytics app.
 
-## What this template includes
+## Includes
+- Clean page layout
+- Sidebar controls
+- Prompt input + placeholder AI response
+- KPI cards
+- Sample dataframe
 
-- Clean Streamlit page setup
-- Text input for user prompt
-- Placeholder AI response block
-- Simple dataframe display
-
-## Run locally
-
+## Run
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -19,8 +18,6 @@ streamlit run app.py
 ```
 
 ## Next steps
-
-- Replace placeholder response with real model/API call
-- Add prompt logging and error handling
-- Connect a real dataset
-- Add deployment config for your preferred platform
+- Connect a real model API
+- Add prompt logging
+- Add charting and data validation

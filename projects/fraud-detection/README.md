@@ -1,38 +1,50 @@
-# Project Overview: Fraud Detection
+# Project Blueprint: Fraud Detection System
 
 ## Project goal
+Build a fraud analytics system that balances detection quality with operational review efficiency.
 
-Design a practical fraud monitoring system that prioritizes high-risk transactions and supports human review workflows.
+## Who it is for
+Fraud analysts, fintech risk teams, and analytics engineers.
 
-## Ideal users
+## Problem statement
+Fraud losses increase when suspicious behavior is missed, but excessive false positives overload investigators.
 
-- Fintech risk teams
-- Fraud analysts
-- Data scientists building risk controls
+## Suggested data schema
+- transaction_id, account_id, timestamp
+- amount, merchant_type, channel
+- device_id, ip_region, geo_distance
+- label_fraud_confirmed, chargeback_flag
 
-## Suggested data inputs
+## Example features
+- Velocity features (count/amount windows)
+- Device/account mismatch signals
+- Merchant risk trend features
 
-- Transaction history (amount, time, merchant, channel)
-- User/account behavior history
-- Device and geolocation signals
-- Chargeback and dispute labels
+## Model / rules ideas
+- Rules for high-confidence cases
+- Supervised model for risk ranking
+- Hybrid score combining rules + model output
 
-## Model or logic ideas
+## Dashboard or UI ideas
+- Alert queue with risk reason breakdown
+- Investigator actions and notes
+- Daily precision/recall trend panel
 
-- Rule engine for high-confidence patterns
-- Supervised model for probabilistic risk scoring
-- Ensemble risk tiering (low/medium/high)
+## Explainability considerations
+- Show top rule/model drivers per alert
+- Keep decision version metadata
+- Capture investigator override reasons
 
-## Dashboard features
+## Evaluation metrics
+- Precision, recall, PR-AUC
+- False-positive rate
+- Time-to-review
+- Fraud loss prevented estimate
 
-- Real-time flagged case queue
-- Risk reason breakdown by transaction
-- Analyst action tracking (approve/reject/escalate)
-- Weekly precision/recall trend view
+## Future enhancements
+- Graph-based linked-entity detection
+- Real-time streaming decisions
+- Adaptive thresholds by segment
 
-## Possible future enhancements
-
-- Graph analytics for linked-entity fraud
-- Adaptive thresholds by region/segment
-- Active learning from analyst decisions
-- Real-time alert orchestration
+## Why this project is portfolio-worthy
+It demonstrates applied ML, operational tradeoff thinking, and risk-system design maturity.

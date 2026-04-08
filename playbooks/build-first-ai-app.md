@@ -1,43 +1,62 @@
 # Playbook: Build Your First AI App
 
 ## Who this is for
-
-Beginners and intermediate builders who want a structured first AI app without overengineering.
+Beginners and intermediate developers who want to ship a credible AI-enabled app quickly.
 
 ## What you will build
+A simple Streamlit assistant with prompt input, response output, and basic analytics-friendly UI blocks.
 
-A simple question-answer assistant app with a clean input/output interface and basic logging.
+## Why it matters
+This teaches the core workflow: narrow scope, measurable output, clear UX, and iterative improvement.
 
 ## Recommended stack
+- Python
+- Streamlit
+- Pandas
+- LLM API client
+- GitHub for version control
 
-- UI: Streamlit
-- Language: Python
-- AI integration: API client of your choice
-- Version control: Git + GitHub
+## Suggested folder structure
+```text
+app/
+├── app.py
+├── prompts/
+├── data/
+└── README.md
+```
 
-## Workflow
+## Step-by-step workflow
+1. Define one business question your app answers.
+2. Create a minimal Streamlit interface.
+3. Add placeholder AI output and error handling.
+4. Add simple data table/KPI display.
+5. Track prompt changes in version control.
+6. Write concise setup and usage docs.
 
-1. Define one narrow use case (e.g., summarize support tickets).
-2. Build a minimal UI with one text input and one output area.
-3. Add AI response handling with clear error states.
-4. Log prompts/responses locally for debugging.
-5. Add a short README with run instructions.
-6. Deploy a basic version and gather feedback.
+## Data requirements
+- Small sample dataset (synthetic if needed)
+- Clear field descriptions
+- Known limitations documented
+
+## Core metrics or outputs
+- Successful response rate
+- User-perceived usefulness
+- App latency (rough)
 
 ## Common mistakes
+- Building too many features too early
+- No prompt/change tracking
+- Ignoring failure states
 
-- Starting with too many features
-- No prompt/version tracking
-- Weak error messages when API calls fail
-- No cost visibility on model usage
+## Governance / responsible use considerations
+- Do not use real sensitive data in demos
+- Label AI output as assisted, not authoritative
+- Keep an audit trail of major prompt/model changes
 
 ## Upgrade ideas
-
 - Add conversation history
-- Add role-based prompts
-- Add usage analytics and token tracking
-- Add feedback buttons for response quality
+- Add source-grounded responses
+- Add role-based prompt templates
 
 ## Final takeaway
-
-Your first AI app should prove value quickly. Keep scope tight, instrument behavior, and iterate from real user input.
+Start small, make outputs inspectable, and iterate with evidence.

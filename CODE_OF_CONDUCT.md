@@ -1,28 +1,20 @@
 # Code of Conduct
 
-## Our commitment
-
-We are committed to a welcoming, respectful, and harassment-free community for everyone.
+## Commitment
+We are committed to a respectful, inclusive, and professional community.
 
 ## Expected behavior
-
-- Be respectful and constructive
-- Assume good intent
-- Give actionable feedback
-- Focus on ideas and outcomes, not personal attacks
-- Support newcomers and non-expert builders
+- Be constructive and courteous
+- Focus on ideas, evidence, and outcomes
+- Help newcomers with practical guidance
 
 ## Unacceptable behavior
-
-- Harassment, discrimination, or hate speech
-- Personal insults, trolling, or intimidation
-- Publishing private information without permission
-- Disruptive or intentionally hostile conduct
+- Harassment, discrimination, or intimidation
+- Personal attacks or abusive language
+- Doxxing or sharing private information
 
 ## Enforcement
-
-Maintainers may remove, edit, or reject contributions and comments that violate this Code of Conduct.
+Maintainers may moderate or remove content that violates this code.
 
 ## Reporting
-
-To report behavior concerns, contact maintainers through repository discussions or private security/contact channels listed in [`SECURITY.md`](SECURITY.md).
+Report concerns privately to maintainers via channels listed in `SECURITY.md`.

@@ -1,45 +1,41 @@
-# Tool Selection Guide
+# Tool Selection Guide (Practical Fintech Builder Edition)
 
-Use this guide to choose a practical AI-building stack based on what you are trying to ship.
+## Which tool should I use if I am a data analyst?
 
-## 1) Clarify your build profile
+Start with:
+- **Streamlit** for app delivery
+- **Copilot or Codex** for coding assistance
+- **GitHub** for versioned documentation and reproducibility
 
-Pick one primary profile:
+Why: this combination is beginner-friendly, fast to ship, and strong for analytics transparency.
 
-- **Fast MVP**: You need a working prototype in days.
-- **Data Product**: You need analytics, dashboards, and model explainability.
-- **Engineering Control**: You need maintainable architecture and deeper customization.
+## Which tool is best for a Streamlit fintech dashboard?
 
-## 2) Recommended starting stacks
+Best default stack:
+- **Streamlit** + **Codex or Cursor** + **Pandas**
 
-### Fast MVP
-- Build: Lovable or Bolt
-- Code assist: Codex or Cursor
-- Dashboard layer: Streamlit (if data-heavy)
+This gives strong control over data logic, risk metrics, and explanation layers while keeping iteration speed high.
 
-### Data Product
-- App layer: Streamlit
-- Coding support: Copilot/Codex/Cursor
-- Versioning + collaboration: GitHub
+## Which tool is best for rapid MVP UI?
 
-### Engineering Control
-- Primary environment: Cursor or Windsurf
-- Agentic execution: Codex
-- Deployment: your preferred cloud CI/CD path
+- **Lovable**, **Bolt**, or **v0** for first-pass UI
+- Then migrate core logic into maintained Python/backend code
 
-## 3) Evaluate before committing
+Use these for validation speed, not final governance-critical implementations.
 
-Run a short benchmark sprint using:
-- Time to first usable demo
-- Ease of debugging
-- Deployment readiness
-- Reproducibility for teammates
+## Which tool is best for controlled code generation?
 
-Template: [`../benchmarks/benchmark-framework.md`](../benchmarks/benchmark-framework.md)
+- **Codex** for task-scoped, repo-wide implementation
+- **Cursor** for interactive code review and iterative refinement
 
-## 4) Common anti-patterns
+Best practice: keep prompts task-specific, require tests/checklists, and document assumptions.
 
-- Picking tools by hype instead of constraints
-- Ignoring onboarding needs for less-experienced teammates
-- Optimizing for demo speed while neglecting maintainability
-- Shipping without reproducible setup documentation
+## Which combination is best for portfolio-quality GitHub projects?
+
+Recommended:
+1. **Codex or Cursor** for implementation
+2. **Streamlit** for analytics interface
+3. **GitHub Actions** for markdown/tests linting
+4. **Benchmark + governance docs** from this repo
+
+This combination signals execution ability, software hygiene, and decision-system maturity.

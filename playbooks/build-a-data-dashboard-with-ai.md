@@ -1,43 +1,62 @@
 # Playbook: Build a Data Dashboard with AI
 
 ## Who this is for
-
-Data analysts, BI developers, and product teams turning static reports into interactive intelligence dashboards.
+Data analysts and dashboard developers modernizing KPI dashboards with AI-assisted commentary.
 
 ## What you will build
+A dashboard with filters, KPIs, trend views, and generated insights tied to visible source metrics.
 
-A dashboard that combines KPIs, filters, and AI-generated narrative insights from data slices.
+## Why it matters
+Decision-makers need interpretation plus transparent evidence, not disconnected AI text.
 
 ## Recommended stack
+- Streamlit
+- Pandas
+- Plotly
+- LLM API for narrative summaries
 
-- Frontend/dashboard: Streamlit
-- Data processing: Pandas
-- Optional warehouse: BigQuery / Snowflake / Postgres
-- AI layer: LLM for summary and anomaly commentary
+## Suggested folder structure
+```text
+dashboard/
+├── app.py
+├── charts/
+├── transforms/
+├── prompts/
+└── data/
+```
 
-## Workflow
+## Step-by-step workflow
+1. Select 3-6 key business metrics.
+2. Build baseline dashboard layout.
+3. Add filtering and date controls.
+4. Add AI summary blocks tied to visible numbers.
+5. Add fallback behavior when AI is unavailable.
+6. Validate summaries against historical known events.
 
-1. Define 3-5 core business metrics.
-2. Build a clean dashboard layout (overview, drill-down, notes).
-3. Add filtering and date range controls.
-4. Generate AI summaries for selected filters.
-5. Add guardrails: show source metrics beside AI text.
-6. Validate outputs with known historical scenarios.
+## Data requirements
+- Timestamped metric data
+- Clean dimensions for filtering
+- Data freshness indicator
+
+## Core metrics or outputs
+- KPI trends
+- Variance vs prior period
+- AI-generated summary with evidence references
 
 ## Common mistakes
+- Hiding raw numbers behind narrative text
+- Overloading with too many visuals
+- No timestamp/data freshness cues
 
-- Letting AI text appear without visible source numbers
-- Overloading the dashboard with too many charts
-- Ignoring data freshness and timestamp labeling
-- No fallback when AI call fails
+## Governance / responsible use considerations
+- Separate factual metrics from generated commentary
+- Keep summary prompts versioned
+- Review AI narratives for misleading causal language
 
 ## Upgrade ideas
-
-- Add automated anomaly detection
-- Add scheduled insight digests via email/Slack
-- Add user-specific watchlists
-- Add model confidence/explanation blocks
+- Add anomaly alerts
+- Add scheduled executive summary digest
+- Add threshold-based traffic-light status cards
 
 ## Final takeaway
-
-AI enhances dashboards when paired with transparent metrics and reliable data flows. Keep data truth visible at all times.
+Useful AI dashboards combine interpretability, source visibility, and decision-focused design.
