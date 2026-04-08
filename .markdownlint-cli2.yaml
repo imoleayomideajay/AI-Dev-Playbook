@@ -1,0 +1,9 @@
+config:
+  default: true
+  MD013: false # line-length handled by readability review, not hard limit
+  MD033: false # allow limited inline HTML if needed in future docs
+  MD024:
+    siblings_only: true
+
+ignores:
+  - node_modules/**
